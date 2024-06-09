@@ -18,8 +18,5 @@ struct Blog: Website {
 
 try Blog().publish(
   withTheme: .foundation,
-  deployedUsing: .gitHub(
-    "",
-    branch: "gh-pages"
-  )
+  deployedUsing: .gitHub("apriakhin/blog", branch: "gh-pages")
 )
